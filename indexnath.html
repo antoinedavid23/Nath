@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>nath.gravure — Gravure laser sur bois sur-mesure · Trophées, Signalétique, Objets de marque</title>
+<meta name="description" content="nath.gravure transforme l'identité de votre marque en objets gravés sur bois. Ce qui vous distingue, rendu tangible. Trophées, signalétique, objets de marque pour entreprises, restaurants et hôtels. Livraison Europe."/>
+<meta name="keywords" content="gravure laser identité marque, objet de marque bois sur-mesure, trophée bois entreprise, signalétique bois professionnelle, branding physique gravure laser, matérialiser identité visuelle bois"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.nathgravure.fr/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"nath.gravure","description":"Gravure laser sur bois sur-mesure. On transforme l'identité de votre marque en objets physiques. Trophées, signalétique, objets de marque pour entreprises, restaurants et hôtels.","email":"nathgravures@gmail.com","telephone":"+33783990180","url":"https://www.nathgravure.fr","areaServed":{"@type":"Place","name":"Europe"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --r:#C0202E;--rd:#8F1520;
+  --bl:#0C0C0C;--wh:#F8F8F6;
+  --g:#888;--g2:#BBBBB9;--g3:#E8E8E6;
+  --ln:rgba(12,12,12,.09);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--wh);color:var(--bl);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.w{width:88%;max-width:1200px;margin:0 auto}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:0 6%;height:66px;transition:background .3s,border-color .3s;border-bottom:1px solid rgba(255,255,255,.07);background:var(--bl)}
+.nav.s{background:var(--bl);backdrop-filter:blur(18px);border-bottom-color:rgba(255,255,255,.07)}
+.logo{font-family:'Barlow',sans-serif;font-size:1.1rem;font-weight:600;letter-spacing:.06em;color:#fff;text-decoration:none;transition:color .3s}
+.logo b{color:var(--r)}
+.nav.s .logo{color:#fff}
+.logo-mark{height:1.15em;width:auto;flex-shrink:0}
+.nav-cta{font-family:'Barlow',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-decoration:none;border:1.5px solid rgba(255,255,255,.28);padding:.52rem 1.3rem;transition:all .2s}
+.nav-cta:hover{background:#fff;color:var(--bl)}
+.nav.s .nav-cta{color:#fff;border-color:rgba(255,255,255,.25)}
+.nav.s .nav-cta:hover{background:#fff;color:var(--bl);border-color:#fff}
+
+/* ======================================================
+   HERO — split layout
+====================================================== */
+.hero{
+  height:100vh;min-height:640px;
+  background:var(--bl);
+  display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+}
+/* left — dark copy */
+.hero-left{
+  background:var(--bl);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;
+  flex:1;
+  padding:140px 8% 8vh;
+  position:relative;z-index:2;
+}
+.hero-eyebrow{
+  font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--r);display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:2rem;
+  opacity:0;animation:fu .6s .1s ease forwards;
+}
+.hero-eyebrow::before{content:'';width:20px;height:1.5px;background:var(--r)}
+.hero-h1{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(3.8rem,7vw,8rem);
+  line-height:.88;letter-spacing:.01em;color:#fff;
+  opacity:0;animation:fu .9s .2s ease forwards;
+}
+.hero-h1 em{color:var(--r);font-style:normal}
+.hero-tagline{
+  font-size:1rem;font-weight:300;font-style:italic;
+  color:rgba(255,255,255,.38);line-height:1.7;
+  margin-top:2rem;max-width:520px;text-align:center;
+  opacity:0;animation:fu .7s .38s ease forwards;
+}
+.hero-tagline strong{color:rgba(255,255,255,.6);font-style:normal;font-weight:400}
+.hero-cta-row{
+  display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:3rem;
+  opacity:0;animation:fu .65s .52s ease forwards;
+}
+.btn-hero{
+  font-family:'Barlow',sans-serif;font-size:.7rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  background:var(--r);color:#fff;padding:.8rem 1.8rem;transition:background .2s;
+}
+.btn-hero:hover{background:var(--rd)}
+.hero-scroll{
+  font-size:.58rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.22);text-decoration:none;
+  display:flex;align-items:center;gap:.6rem;
+  transition:color .2s;
+}
+.hero-scroll:hover{color:rgba(255,255,255,.5)}
+.hero-scroll::after{content:'';width:1px;height:28px;background:linear-gradient(to bottom,rgba(255,255,255,.2),transparent)}
+
+/* right — full photo */
+.hero-right{
+  position:relative;overflow:hidden;
+}
+.hero-right img{
+  width:100%;height:100%;object-fit:cover;object-position:center;
+  filter:grayscale(20%);
+  transition:filter 1s ease;
+}
+.hero-right:hover img{filter:grayscale(0%)}
+.hero-right-ov{
+  position:absolute;inset:0;
+  background:linear-gradient(to right,rgba(12,12,12,.6) 0%,transparent 40%);
+}
+/* floating caption */
+.hero-caption{
+  position:absolute;bottom:8vh;right:6%;
+  text-align:right;
+  opacity:0;animation:fu .6s .7s ease forwards;
+}
+.hero-caption span{
+  font-size:.58rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.3);display:block;margin-bottom:.3rem;
+}
+.hero-caption p{
+  font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.08em;
+  color:rgba(255,255,255,.15);
+}
+
+/* TICKER */
+.ticker{background:var(--r);overflow:hidden;padding:.7rem 0}
+.ticker-track{display:flex;white-space:nowrap;animation:tick 24s linear infinite}
+.ti{display:inline-flex;align-items:center;gap:1.8rem;padding:0 1.8rem;flex-shrink:0;font-family:'Bebas Neue',sans-serif;font-size:.95rem;letter-spacing:.12em;color:rgba(255,255,255,.75)}
+.ti-sep{color:rgba(255,255,255,.28)}
+
+/* ======================================================
+   MANIFESTE
+====================================================== */
+.manifeste{
+  padding:110px 0;
+  border-bottom:1px solid var(--ln);
+}
+.mf-grid{display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:start}
+.mf-left{
+  width:280px;
+  position:sticky;top:100px;
+}
+.mf-kicker{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--r);display:block;margin-bottom:1.2rem}
+.mf-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(2.2rem,3.5vw,3.5rem);
+  line-height:.92;letter-spacing:.01em;color:var(--bl);
+}
+.mf-title em{color:var(--r);font-style:normal}
+.mf-right{
+  display:flex;flex-direction:column;gap:2.5rem;
+  padding-top:.4rem;
+}
+.mf-statement{
+  display:grid;grid-template-columns:28px 1fr;gap:1.4rem;
+  align-items:start;
+  padding-bottom:2.5rem;
+  border-bottom:1px solid var(--ln);
+}
+.mf-statement:last-child{border-bottom:none;padding-bottom:0}
+.mf-n{
+  font-family:'Bebas Neue',sans-serif;font-size:.72rem;letter-spacing:.15em;
+  color:var(--g2);padding-top:.2rem;
+}
+.mf-body{
+  font-size:1.15rem;font-weight:300;line-height:1.8;color:var(--bl);
+}
+.mf-body strong{font-weight:500}
+.mf-body em{font-style:italic;color:var(--g)}
+
+/* ======================================================
+   CE QU'ON PRODUIT
+====================================================== */
+.produits{padding:100px 0;border-bottom:1px solid var(--ln)}
+.section-lbl{display:flex;align-items:center;gap:1rem;font-family:'Bebas Neue',sans-serif;font-size:.78rem;letter-spacing:.2em;color:var(--g2);margin-bottom:56px}
+.section-lbl::after{content:'';flex:1;height:1px;background:var(--ln)}
+
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--ln)}
+.pc{padding:2.2rem 2rem 2.4rem;border-right:1px solid var(--ln);display:flex;flex-direction:column;position:relative;overflow:hidden;transition:background .25s;cursor:default}
+.pc:last-child{border-right:none}
+.pc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--r);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.pc:hover{background:var(--bl)}
+.pc:hover::after{transform:scaleX(1)}
+.pc-img{width:100%;aspect-ratio:4/3;overflow:hidden;margin-bottom:1.8rem}
+.pc-img img{transition:transform .5s ease}
+.pc:hover .pc-img img{transform:scale(1.07)}
+.pc-n{font-family:'Bebas Neue',sans-serif;font-size:.68rem;letter-spacing:.2em;color:var(--g2);margin-bottom:.9rem;transition:color .25s}
+.pc:hover .pc-n{color:rgba(255,255,255,.15)}
+.pc-title{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.04em;color:var(--bl);line-height:1.05;margin-bottom:.9rem;transition:color .25s}
+.pc:hover .pc-title{color:#fff}
+.pc-body{font-size:.83rem;font-weight:300;line-height:1.8;color:var(--g);transition:color .25s;flex:1}
+.pc:hover .pc-body{color:rgba(255,255,255,.4)}
+.pc-who{font-size:.63rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--r);margin-top:1.4rem}
+.pc-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.pc-tag{font-size:.62rem;font-weight:400;color:var(--g2);background:rgba(12,12,12,.04);border:1px solid var(--ln);padding:.25rem .6rem;line-height:1.3;transition:color .25s,background .25s,border-color .25s}
+.pc:hover .pc-tag{color:rgba(255,255,255,.3);background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08)}
+
+/* LISTE POSSIBILITÉS */
+.plist-wrap{border:1px solid var(--ln);border-top:none;margin-top:0}
+.plist-trigger{
+  width:100%;display:flex;align-items:center;justify-content:space-between;
+  padding:1.6rem 2.2rem;background:var(--wh);border:none;cursor:pointer;
+  transition:background .2s;gap:1rem;
+}
+.plist-trigger:hover{background:var(--g3)}
+.plist-trigger-label{
+  font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.08em;
+  color:var(--bl);text-align:left;
+}
+.plist-trigger-icon{
+  font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--r);
+  flex-shrink:0;transition:transform .3s ease;line-height:1;
+}
+.plist-trigger[aria-expanded="true"] .plist-trigger-icon,
+.plist-trigger.open .plist-trigger-icon{transform:rotate(45deg)}
+.plist-drawer{
+  max-height:0;overflow:hidden;
+  transition:max-height .45s ease;
+  background:var(--bl);
+}
+.plist-drawer.open{max-height:600px}
+.plist-inner{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+.plist-col{padding:2.4rem 2.2rem;border-right:1px solid rgba(255,255,255,.07)}
+.plist-col:last-child{border-right:none}
+.plist-col-title{
+  font-family:'Bebas Neue',sans-serif;font-size:.75rem;letter-spacing:.18em;
+  color:var(--r);margin-bottom:1.2rem;
+}
+.plist-ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.plist-ul li{
+  font-size:.82rem;font-weight:300;color:rgba(255,255,255,.45);
+  display:flex;align-items:baseline;gap:.6rem;line-height:1.4;
+}
+.plist-ul li::before{content:'—';color:rgba(255,255,255,.15);flex-shrink:0;font-size:.7rem}
+.plist-cta{
+  padding:1.4rem 2.2rem;
+  border-top:1px solid rgba(255,255,255,.07);
+  display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;
+}
+.plist-cta span{font-size:.8rem;font-weight:300;color:rgba(255,255,255,.3)}
+.plist-cta a{
+  font-family:'Bebas Neue',sans-serif;font-size:.78rem;letter-spacing:.1em;
+  color:var(--r);text-decoration:none;transition:opacity .2s;
+}
+.plist-cta a:hover{opacity:.7}
+@media(max-width:768px){
+  .plist-inner{grid-template-columns:1fr}
+  .plist-col{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}
+  .plist-col:last-child{border-bottom:none}
+  .plist-drawer.open{max-height:1200px}
+}
+
+/* ======================================================
+   POUR QUI
+====================================================== */
+.pourqui{padding:100px 0;background:var(--bl);border-bottom:1px solid rgba(255,255,255,.06)}
+.pq-lbl{font-family:'Bebas Neue',sans-serif;font-size:.78rem;letter-spacing:.2em;color:rgba(255,255,255,.2);display:flex;align-items:center;gap:1rem;margin-bottom:56px}
+.pq-lbl::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.07)}
+.pq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(255,255,255,.07)}
+.pq{padding:3rem 2.4rem;border-right:1px solid rgba(255,255,255,.07);transition:background .25s}
+.pq:last-child{border-right:none}
+.pq:hover{background:rgba(255,255,255,.03)}
+.pq-img{width:100%;aspect-ratio:16/9;overflow:hidden;margin-bottom:2.2rem;filter:grayscale(50%);transition:filter .4s}
+.pq:hover .pq-img{filter:grayscale(0%)}
+.pq-n{font-family:'Bebas Neue',sans-serif;font-size:.68rem;letter-spacing:.2em;color:rgba(255,255,255,.18);display:block;margin-bottom:1rem}
+.pq-title{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.04em;color:#fff;line-height:1;margin-bottom:.8rem}
+.pq-hook{font-size:.95rem;font-weight:300;font-style:italic;color:rgba(255,255,255,.32);line-height:1.75;margin-bottom:1.4rem}
+.pq-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.pq-list li{font-size:.8rem;font-weight:400;color:rgba(255,255,255,.4);display:flex;align-items:baseline;gap:.6rem}
+.pq-list li::before{content:'—';color:var(--r);flex-shrink:0;font-size:.7rem}
+
+/* ======================================================
+   OBJECTIONS
+====================================================== */
+.objections{padding:100px 0;border-bottom:1px solid var(--ln)}
+.obj-head{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:64px}
+.obj-kicker{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--r);display:block;margin-bottom:1.2rem}
+.obj-h{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,3.8vw,4.2rem);line-height:.93;letter-spacing:.015em;color:var(--bl)}
+.obj-h em{color:var(--r);font-style:normal}
+.obj-intro{font-size:1rem;font-weight:300;line-height:1.85;color:var(--g)}
+.obj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--ln)}
+.ob{padding:2.4rem 2.2rem;border-right:1px solid var(--ln);border-bottom:1px solid var(--ln);transition:background .2s;position:relative;overflow:hidden}
+.ob:hover{background:var(--g3)}
+.ob:nth-child(3n){border-right:none}
+.ob:nth-child(n+4){border-bottom:none}
+.ob::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--r);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.ob:hover::before{transform:scaleX(1)}
+.ob-q{font-family:'Bebas Neue',sans-serif;font-size:1.05rem;letter-spacing:.03em;color:var(--bl);line-height:1.2;margin-bottom:1rem;display:flex;align-items:flex-start;gap:.6rem}
+.ob-q::before{content:'"';color:var(--r);font-size:2rem;line-height:.7;flex-shrink:0;margin-top:.1rem}
+.ob-a{font-size:.85rem;font-weight:300;line-height:1.75;color:var(--g)}
+.ob-a strong{color:var(--bl);font-weight:500}
+
+/* ======================================================
+   CONTACT
+====================================================== */
+.contact{padding:100px 0;background:var(--bl)}
+
+.contact-top{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:72px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ct-kicker{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--r);display:block;margin-bottom:1.2rem}
+.ct-h{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,5vw,6rem);line-height:.88;letter-spacing:.015em;color:#fff}
+.ct-h em{color:var(--r);font-style:normal}
+.ct-right{display:flex;flex-direction:column;gap:1.8rem}
+.ct-promise{display:flex;align-items:flex-start;gap:1.2rem;padding:1.6rem 1.8rem;border:1px solid rgba(255,255,255,.07);transition:border-color .2s}
+.ct-promise:hover{border-color:rgba(192,32,46,.4)}
+.ct-p-dot{width:8px;height:8px;border-radius:50%;background:var(--r);flex-shrink:0;margin-top:.3rem}
+.ct-p-title{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.04em;color:#fff;margin-bottom:.3rem}
+.ct-p-body{font-size:.8rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,.35)}
+.ct-p-body strong{color:rgba(255,255,255,.6);font-weight:500}
+
+.contact-main{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+
+.ct-info-h{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;color:rgba(255,255,255,.3);margin-bottom:2rem}
+.ct-details{display:flex;flex-direction:column;gap:0;border:1px solid rgba(255,255,255,.07);margin-bottom:2.5rem}
+.ctd{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 1.4rem;border-bottom:1px solid rgba(255,255,255,.07);transition:background .2s}
+.ctd:last-child{border-bottom:none}
+.ctd:hover{background:rgba(255,255,255,.03)}
+.ctd-ico{width:34px;height:34px;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.9rem}
+.ctd-lbl{font-size:.58rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-family:'Bebas Neue',sans-serif;color:rgba(255,255,255,.2);margin-bottom:.15rem}
+.ctd-val{font-size:.88rem;font-weight:400;color:rgba(255,255,255,.6)}
+.ctd-val a{color:inherit;text-decoration:none;transition:color .2s}
+.ctd-val a:hover{color:#fff}
+.ct-socs{display:flex;gap:.5rem;margin-bottom:2.5rem}
+.ctsoc{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;color:rgba(255,255,255,.3);text-decoration:none;border:1px solid rgba(255,255,255,.1);transition:all .2s}
+.ctsoc:hover{border-color:var(--r);color:var(--r)}
+.ct-faq{border-top:1px solid rgba(255,255,255,.07);padding-top:2rem}
+.ct-faq-title{font-family:'Bebas Neue',sans-serif;font-size:.75rem;letter-spacing:.18em;color:rgba(255,255,255,.2);margin-bottom:1.4rem}
+.faq-item{padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.06);cursor:pointer}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:.8rem;font-size:.83rem;font-weight:500;color:rgba(255,255,255,.5);transition:color .2s}
+.faq-item:hover .faq-q{color:#fff}
+.faq-icon{width:18px;height:18px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.7rem;color:rgba(255,255,255,.3);transition:all .2s;font-style:normal}
+.faq-item.open .faq-icon{background:var(--r);border-color:var(--r);color:#fff}
+.faq-a{font-size:.8rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,.35);max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding-top:0}
+.faq-item.open .faq-a{max-height:120px;padding-top:.7rem}
+.faq-a strong{color:rgba(255,255,255,.55)}
+
+/* FORM */
+.form-wrap{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07)}
+.form-head{padding:2rem 2.4rem 1.6rem;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.form-head-title{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;color:#fff}
+.form-badge{display:flex;align-items:center;gap:.5rem;font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);white-space:nowrap}
+.form-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--r);flex-shrink:0;animation:blink 2s infinite}
+.fg{display:flex;flex-direction:column;border-bottom:1px solid rgba(255,255,255,.07);position:relative}
+.flbl{font-family:'Bebas Neue',sans-serif;font-size:.65rem;letter-spacing:.18em;color:rgba(255,255,255,.2);padding:1rem 2.4rem .2rem;transition:color .2s;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.fg:focus-within .flbl{color:var(--r)}
+.flbl-hint{font-family:'Barlow',sans-serif;font-size:.68rem;font-weight:300;letter-spacing:0;text-transform:none;color:rgba(255,255,255,.18);font-style:italic}
+.fi,.fs,.fta{font-family:'Barlow',sans-serif;font-size:.92rem;font-weight:300;color:#fff;background:transparent;border:none;outline:none;padding:.25rem 2.4rem 1rem;width:100%;-webkit-appearance:none;transition:background .2s}
+.fi::placeholder,.fta::placeholder{color:rgba(255,255,255,.15)}
+.fi:focus,.fta:focus{background:rgba(255,255,255,.02)}
+.fs{cursor:pointer;color:rgba(255,255,255,.38)}
+.fs option{background:#181818;color:#fff}
+.fta{resize:none;min-height:110px}
+.frow{display:grid;grid-template-columns:1fr 1fr}
+.frow .fg{border-right:1px solid rgba(255,255,255,.07)}
+.frow .fg:last-child{border-right:none}
+.form-trust{display:flex;flex-wrap:wrap;gap:.6rem 2rem;padding:.9rem 2.4rem;border-bottom:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.015)}
+.ft-item{display:flex;align-items:center;gap:.4rem;font-size:.68rem;font-weight:400;color:rgba(255,255,255,.25)}
+.ft-item::before{content:'✓';color:var(--r);font-size:.65rem}
+.fcheck{display:flex;align-items:flex-start;gap:.9rem;padding:1.1rem 2.4rem;border-bottom:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.015)}
+.fcheck input{accent-color:var(--r);width:13px;height:13px;margin-top:3px;flex-shrink:0;cursor:pointer}
+.fcheck label{font-size:.72rem;color:rgba(255,255,255,.22);line-height:1.65}
+.fcheck a{color:rgba(255,255,255,.4)}
+.fsub{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.15em;background:var(--r);color:#fff;border:none;padding:1.3rem 2.4rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%;transition:background .2s}
+.fsub:hover{background:var(--rd)}
+.fsub-sub{font-family:'Barlow',sans-serif;font-size:.65rem;font-weight:300;letter-spacing:.04em;text-transform:none;color:rgba(255,255,255,.55);margin-top:.15rem;font-style:italic}
+.fsub-arr{font-size:1.3rem;transition:transform .2s}
+.fsub:hover .fsub-arr{transform:translateX(5px)}
+.succ{display:none;padding:3.5rem 2.4rem}
+.succ-icon{font-size:2rem;color:var(--r);font-family:'Bebas Neue',sans-serif;letter-spacing:.06em;margin-bottom:1.2rem;display:block}
+.succ-title{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.04em;color:#fff;line-height:1;margin-bottom:1rem}
+.succ-p{font-size:.88rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.35);margin-bottom:1.5rem}
+.succ-p strong{color:rgba(255,255,255,.6);font-weight:500}
+.succ-links{display:flex;gap:1rem;flex-wrap:wrap}
+.succ-link{font-family:'Bebas Neue',sans-serif;font-size:.78rem;letter-spacing:.12em;color:rgba(255,255,255,.4);text-decoration:none;border:1px solid rgba(255,255,255,.1);padding:.5rem 1rem;transition:all .2s}
+.succ-link:hover{border-color:var(--r);color:#fff}
+.fg.err .fi,.fg.err .fs,.fg.err .fta{background:rgba(192,32,46,.06)}
+.fg.err .flbl{color:var(--r)}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--ln);padding:1.8rem 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.f-logo{font-family:'Barlow',sans-serif;font-size:1rem;font-weight:600;letter-spacing:.06em;color:var(--bl);text-decoration:none}
+.f-logo b{color:var(--r)}
+.f-copy{font-size:.68rem;color:var(--g)}
+.f-links{display:flex;gap:2rem;flex-wrap:wrap}
+.f-links a{font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;transition:color .2s}
+.f-links a:hover{color:var(--r)}
+.f-socs{display:flex;gap:.7rem}
+.fsoc{display:inline-flex;align-items:center;justify-content:center;color:var(--g);text-decoration:none;transition:color .2s}
+.fsoc:hover{color:var(--r)}
+
+/* SBAR */
+.sbar{position:fixed;bottom:0;left:0;right:0;z-index:800;background:rgba(12,12,12,.97);backdrop-filter:blur(16px);border-top:1px solid rgba(255,255,255,.06);padding:.8rem 6%;display:flex;align-items:center;justify-content:space-between;gap:1rem;transform:translateY(100%);transition:transform .3s ease}
+.sbar.on{transform:translateY(0)}
+.sbar p{font-size:.73rem;font-weight:300;color:rgba(255,255,255,.35)}
+.sbar strong{color:rgba(255,255,255,.75);font-weight:500}
+.sbar-cta{font-family:'Bebas Neue',sans-serif;font-size:.82rem;letter-spacing:.12em;background:var(--r);color:#fff;padding:.6rem 1.4rem;text-decoration:none;white-space:nowrap;transition:background .2s}
+.sbar-cta:hover{background:var(--rd)}
+
+/* ANIM */
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.rev.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .hero-left{padding:130px 6% 8vh}
+  .mf-grid{grid-template-columns:1fr;gap:3rem}
+  .mf-left{width:100%;position:static}
+  .acc-grid,.contact-top,.contact-main,.obj-head{grid-template-columns:1fr;gap:3rem}
+  .pgrid{grid-template-columns:1fr 1fr}
+  .pc:nth-child(2){border-right:none}
+  .pc:nth-child(1),.pc:nth-child(2){border-bottom:1px solid var(--ln)}
+  .pq-grid{grid-template-columns:1fr}
+  .pq{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}
+  .pq:last-child{border-bottom:none}
+  .obj-grid{grid-template-columns:1fr 1fr}
+  .ob:nth-child(2n){border-right:none}
+  .ob:nth-child(n+5){border-bottom:none}
+  .footer{flex-direction:column;align-items:flex-start}
+  .form-head{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+  .pgrid{grid-template-columns:1fr}
+  .pc{border-right:none;border-bottom:1px solid var(--ln)}
+  .pc:last-child{border-bottom:none}
+  .frow{grid-template-columns:1fr}
+  .frow .fg{border-right:none}
+  .obj-grid{grid-template-columns:1fr}
+  .ob{border-right:none}
+  .ob:nth-child(n+4){border-bottom:1px solid var(--ln)}
+  .ob:last-child{border-bottom:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#" class="logo">Nath<b>.</b>Gravure</a>
+  <a href="#contact" class="nav-cta">Parler de votre projet</a>
+</nav>
+
+<!-- ======================================================
+     HERO — split
+====================================================== -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Nath.Gravure · Gravure laser sur bois</div>
+    <h1 class="hero-h1">
+      ON GRAVE<br>
+      CE QUI VOUS<br>
+      REND <em>UNIQUE.</em>
+    </h1>
+    <p class="hero-tagline">
+      Pas juste votre logo. Votre essence.<br>
+      Ce qui vous distingue, ce que vous défendez,<br>
+      <strong>rendu tangible dans le bois.</strong>
+    </p>
+    <div class="hero-cta-row">
+      <a href="#contact" class="btn-hero">Démarrer un projet →</a>
+      <a href="#manifeste" class="hero-scroll">Notre approche</a>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ti">Identité de marque <span class="ti-sep">/</span></div>
+    <div class="ti">Trophées & Récompenses <span class="ti-sep">/</span></div>
+    <div class="ti">Signalétique <span class="ti-sep">/</span></div>
+    <div class="ti">Objets de marque <span class="ti-sep">/</span></div>
+    <div class="ti">Branding physique <span class="ti-sep">/</span></div>
+    <div class="ti">Devis sous 24h <span class="ti-sep">/</span></div>
+    <div class="ti">Livraison Europe <span class="ti-sep">/</span></div>
+    <div class="ti">Identité de marque <span class="ti-sep">/</span></div>
+    <div class="ti">Trophées & Récompenses <span class="ti-sep">/</span></div>
+    <div class="ti">Signalétique <span class="ti-sep">/</span></div>
+    <div class="ti">Objets de marque <span class="ti-sep">/</span></div>
+    <div class="ti">Branding physique <span class="ti-sep">/</span></div>
+    <div class="ti">Devis sous 24h <span class="ti-sep">/</span></div>
+    <div class="ti">Livraison Europe <span class="ti-sep">/</span></div>
+  </div>
+</div>
+
+<!-- ======================================================
+     MANIFESTE
+====================================================== -->
+<section class="manifeste" id="manifeste">
+  <div class="w">
+    <div class="mf-grid rev">
+      <div class="mf-left">
+        <span class="mf-kicker">Notre approche</span>
+        <h2 class="mf-title">CE QU'ON<br>CROIT<br><em>VRAIMENT.</em></h2>
+      </div>
+      <div class="mf-right">
+
+        <div class="mf-statement">
+          <div class="mf-n">01</div>
+          <p class="mf-body">
+            La plupart des marques ont une charte graphique. Quand on grave pour vous, on la respecte — typographies, proportions, espacements. <strong>Votre identité visuelle reste cohérente, même sur du bois.</strong>
+          </p>
+        </div>
+
+        <div class="mf-statement">
+          <div class="mf-n">02</div>
+          <p class="mf-body">
+            Un client qui entre dans vos bureaux, un partenaire à qui vous remettez quelque chose, une équipe qu'on récompense devant tout le monde — <strong>ce sont des moments de marque.</strong> L'objet que vous posez sur la table ce jour-là, ça compte.
+          </p>
+        </div>
+
+        <div class="mf-statement">
+          <div class="mf-n">03</div>
+          <p class="mf-body">
+            Le bois, c'est un signal. Vos clients et partenaires le remarquent. <strong>Ça dit que vous ne prenez pas la première option</strong>, que vous avez fait un choix — et que vous faites les choses sérieusement.
+          </p>
+        </div>
+
+        <div class="mf-statement">
+          <div class="mf-n">04</div>
+          <p class="mf-body">
+            Sur des séries, chaque pièce est identique. Pas de variation d'une commande à l'autre. <strong>Vous pouvez commander 5 ou 500 — le résultat est le même.</strong> Et toujours un aperçu avant qu'on lance.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     CE QU'ON PRODUIT
+====================================================== -->
+<section class="produits" id="produits">
+  <div class="w">
+    <div class="section-lbl rev">CE QU'ON PRODUIT</div>
+    <div class="pgrid">
+
+      <div class="pc rev">
+        <div class="pc-n">01 / 04</div>
+        <div class="pc-title">TROPHÉES<br>&amp; RÉCOMPENSES</div>
+        <p class="pc-body">Ce qu'on célèbre dit qui on est. Un trophée gravé porte votre culture autant que le nom du lauréat — c'est l'objet qu'on garde sur son bureau, qu'on montre, qui représente un moment.</p>
+        <div class="pc-who">Entreprises · Événements · Associations</div>
+      </div>
+
+      <div class="pc rev d1">
+        <div class="pc-n">02 / 04</div>
+        <div class="pc-title">PLAQUES<br>&amp; SIGNALÉTIQUE</div>
+        <p class="pc-body">Votre espace parle de vous avant même que vous ouvriez la bouche. Chaque plaque, chaque panneau est une occasion de dire qui vous êtes — sans bruit, sans effort, juste en étant là. En restauration, ça va des numéros de table aux blocs QR code posés en évidence.</p>
+        <div class="pc-who">Restaurants · Hôtels · Entreprises · Cabinets</div>
+      </div>
+
+      <div class="pc rev d2">
+        <div class="pc-n">03 / 04</div>
+        <div class="pc-title">OBJETS<br>DE MARQUE</div>
+        <p class="pc-body">Pas des goodies qu'on glisse dans un tiroir. Des objets qu'on garde parce qu'ils sont beaux, utiles, gravés à votre image. La planche à découper posée sur la table d'un restaurant, le dessous de verre avec le logo, le bloc QR code en bois sur le comptoir — des objets fonctionnels qui font du branding sans y penser.</p>
+        <div class="pc-who">Restaurants · Agences · Directions comm' · Salons</div>
+      </div>
+
+      <div class="pc rev d3">
+        <div class="pc-n">04 / 04</div>
+        <div class="pc-title">BOISERIE<br>DÉCORATIVE</div>
+        <p class="pc-body">Un logo mural gravé dans un couloir d'accueil, une citation dans une salle de réunion — la matière devient le message. L'espace cesse d'être neutre et commence à appartenir à votre marque.</p>
+        <div class="pc-who">Hôtels · Showrooms · Espaces d'accueil</div>
+      </div>
+
+    </div>
+
+    <!-- TIROIR LISTE -->
+    <div class="plist-wrap">
+      <button class="plist-trigger" id="plistBtn" aria-expanded="false">
+        <span class="plist-trigger-label">Découvrez la liste complète des possibilités</span>
+        <span class="plist-trigger-icon" id="plistIcon">+</span>
+      </button>
+      <div class="plist-drawer" id="plistDrawer">
+        <div class="plist-inner">
+
+          <div class="plist-col">
+            <div class="plist-col-title">Restauration &amp; Hôtellerie</div>
+            <ul class="plist-ul">
+              <li>Planches à découper gravées</li>
+              <li>Dessous de verre</li>
+              <li>Sets de table / dessous de table</li>
+              <li>Porte-additions</li>
+              <li>Blocs QR code en bois</li>
+              <li>Numéros de table</li>
+              <li>Porte-menus &amp; présentoirs carte</li>
+              <li>Panneaux réservé &amp; fléchage de salle</li>
+              <li>Signalétique de chambre</li>
+              <li>Boiserie décorative de salle</li>
+            </ul>
+          </div>
+
+          <div class="plist-col">
+            <div class="plist-col-title">Entreprises &amp; Bureaux</div>
+            <ul class="plist-ul">
+              <li>Trophées &amp; awards sur-mesure</li>
+              <li>Plaques nominatives</li>
+              <li>Plaques de porte &amp; numérotation</li>
+              <li>Panneaux d'accueil</li>
+              <li>Sets de bureau gravés</li>
+              <li>Porte-clés &amp; objets de marque</li>
+              <li>Goodies salons &amp; événements</li>
+              <li>Présentoirs logo &amp; vitrine</li>
+            </ul>
+          </div>
+
+          <div class="plist-col">
+            <div class="plist-col-title">Espaces &amp; Décoration</div>
+            <ul class="plist-ul">
+              <li>Logos muraux gravés</li>
+              <li>Citations &amp; typographies murales</li>
+              <li>Panneaux décoratifs sur-mesure</li>
+              <li>Éléments de showroom &amp; boutique</li>
+              <li>Signalétique événementielle</li>
+              <li>Objets de scène &amp; podium</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="plist-cta">
+          <span>Vous ne trouvez pas ce qu'il vous faut ?</span>
+          <a href="#contact">Décrivez votre besoin →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================================
+     POUR QUI
+====================================================== -->
+<section class="pourqui" id="pourqui">
+  <div class="w">
+    <div class="pq-lbl rev">À QUI ON S'ADRESSE</div>
+    <div class="pq-grid">
+
+      <div class="pq rev">
+        <span class="pq-n">01 / 03</span>
+        <h3 class="pq-title">VOUS BÂTISSEZ<br>UNE MARQUE</h3>
+        <p class="pq-hook">Votre charte graphique est soignée. Votre site aussi. Il manque l'objet physique — celui qui met votre identité dans les mains de vos clients, de vos équipes, de vos partenaires.</p>
+        <ul class="pq-list">
+          <li>Donner du corps à votre identité visuelle</li>
+          <li>Récompenser avec des objets qui ont du sens</li>
+          <li>Laisser une impression physique durable</li>
+          <li>Habiller vos espaces à votre image</li>
+        </ul>
+      </div>
+
+      <div class="pq rev d1">
+        <span class="pq-n">02 / 03</span>
+        <h3 class="pq-title">VOUS CRÉEZ<br>UNE EXPÉRIENCE</h3>
+        <p class="pq-hook">Dans un restaurant ou un hôtel, rien n'est anodin. La signalétique, les textures, les matières — tout parle. Un espace dont chaque détail est pensé n'a pas besoin de se présenter.</p>
+        <ul class="pq-list">
+          <li>Cohérence visuelle dans chaque espace</li>
+          <li>Signalétique qui renforce le positionnement</li>
+          <li>Boiserie décorative sur-mesure</li>
+          <li>Objets de marque pour vos clients</li>
+        </ul>
+      </div>
+
+      <div class="pq rev d2">
+        <span class="pq-n">03 / 03</span>
+        <h3 class="pq-title">VOUS MARQUEZ<br>LES ESPRITS</h3>
+        <p class="pq-hook">Les événements se souviennent par les émotions — et par les objets. Ce qu'on remet ce soir-là, les gens le gardent ou l'oublient. Ça se décide avant même la cérémonie.</p>
+        <ul class="pq-list">
+          <li>Récompenses qui incarnent vos valeurs</li>
+          <li>Objets remis qu'on ne jette pas</li>
+          <li>Branding physique de l'espace événementiel</li>
+          <li>Séries maîtrisées, délais respectés</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     OBJECTIONS
+====================================================== -->
+<section class="objections" id="objections">
+  <div class="w">
+    <div class="obj-head rev">
+      <div>
+        <span class="obj-kicker">Sans détour</span>
+        <h2 class="obj-h">CE QUE VOUS<br>VOUS DEMANDEZ<br><em>SÛREMENT.</em></h2>
+      </div>
+      <p class="obj-intro">Avant d'envoyer un brief, la plupart des gens ont les mêmes questions. Voici les réponses directes — sans jargon.</p>
+    </div>
+    <div class="obj-grid rev">
+      <div class="ob">
+        <div class="ob-q">Je n'ai pas encore de brief précis.</div>
+        <p class="ob-a">Une direction, un contexte, une envie — c'est suffisant. <strong>On construit le brief avec vous</strong> à partir de là.</p>
+      </div>
+      <div class="ob">
+        <div class="ob-q">Mon budget est serré.</div>
+        <p class="ob-a">Le devis s'adapte à votre volume et vos contraintes. <strong>Pas de tarif minimum imposé.</strong> On vous propose ce qui correspond.</p>
+      </div>
+      <div class="ob">
+        <div class="ob-q">Je n'ai pas mon logo en haute qualité.</div>
+        <p class="ob-a">Un JPG, un PDF, un lien vers votre site — ça suffit pour commencer. <strong>On s'adapte à ce que vous avez.</strong></p>
+      </div>
+      <div class="ob">
+        <div class="ob-q">J'ai besoin de ça rapidement.</div>
+        <p class="ob-a">Donnez-nous votre date dans le formulaire. <strong>On organise la production en conséquence</strong> et on vous le confirme dans le devis.</p>
+      </div>
+      <div class="ob">
+        <div class="ob-q">Quel est le minimum de commande ?</div>
+        <p class="ob-a"><strong>Il n'y en a pas.</strong> On produit à partir d'une seule pièce. Les grandes séries ont des tarifs dégressifs.</p>
+      </div>
+      <div class="ob">
+        <div class="ob-q">Comment savoir si le résultat me conviendra ?</div>
+        <p class="ob-a">Chaque devis inclut <strong>un aperçu visuel de votre gravure</strong> avant production. Vous validez, on lance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+<section class="contact" id="contact">
+  <div class="w">
+
+    <div class="contact-top rev">
+      <div>
+        <span class="ct-kicker">Devis gratuit · Sans engagement</span>
+        <h2 class="ct-h">
+          PARLONS DE<br>
+          CE QUI VOUS<br>
+          <em>DISTINGUE.</em>
+        </h2>
+      </div>
+      <div class="ct-right">
+        <div class="ct-promise">
+          <div class="ct-p-dot"></div>
+          <div>
+            <div class="ct-p-title">UN APERÇU VISUEL AVANT PRODUCTION</div>
+            <p class="ct-p-body">Vous voyez exactement ce qui sera gravé <strong>avant qu'on lance la machine.</strong> Pas de mauvaise surprise — juste votre validation.</p>
+          </div>
+        </div>
+        <div class="ct-promise">
+          <div class="ct-p-dot"></div>
+          <div>
+            <div class="ct-p-title">ON PART DE VOTRE IMAGE, PAS D'UN TEMPLATE</div>
+            <p class="ct-p-body">Chaque projet commence par comprendre votre marque. <strong>Ce qu'on produit vous ressemble</strong> — pas un catalogue.</p>
+          </div>
+        </div>
+        <div class="ct-promise">
+          <div class="ct-p-dot"></div>
+          <div>
+            <div class="ct-p-title">DEVIS SOUS 24H — GRATUIT ET SANS ENGAGEMENT</div>
+            <p class="ct-p-body">Envoyez votre besoin, même vague. On revient avec <strong>une proposition concrète et chiffrée</strong> en moins d'un jour ouvré.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-main">
+      <div class="rev">
+        <div class="ct-info-h">CONTACT DIRECT</div>
+        <div class="ct-details">
+          <div class="ctd">
+            <div class="ctd-ico">✉️</div>
+            <div><div class="ctd-lbl">E-mail</div><div class="ctd-val"><a href="mailto:nathgravures@gmail.com">nathgravures@gmail.com</a></div></div>
+          </div>
+          <div class="ctd">
+            <div class="ctd-ico">📞</div>
+            <div><div class="ctd-lbl">Téléphone</div><div class="ctd-val"><a href="tel:+33783990180">07 83 99 01 80</a></div></div>
+          </div>
+          <div class="ctd">
+            <div class="ctd-ico">📦</div>
+            <div><div class="ctd-lbl">Livraison</div><div class="ctd-val">Toute l'Europe</div></div>
+          </div>
+        </div>
+        <div class="ct-socs">
+          <a href="https://www.instagram.com/nathgravure" class="ctsoc" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/nathgravure" class="ctsoc" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@nathgravure" class="ctsoc" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.52V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+          </a>
+        </div>
+        <div class="ct-faq">
+          <div class="ct-faq-title">QUESTIONS FRÉQUENTES</div>
+          <div class="faq-item">
+            <div class="faq-q">Combien de temps pour recevoir ma commande ? <em class="faq-icon">+</em></div>
+            <div class="faq-a">Le devis précise toujours un délai de production. En général, comptez <strong>1 à 3 semaines</strong> selon le volume. Pour les commandes urgentes, mentionnez votre date dans le formulaire.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Vous livrez en dehors de France ? <em class="faq-icon">+</em></div>
+            <div class="faq-a">Oui, <strong>partout en Europe.</strong> Les frais de livraison sont inclus dans le devis. Pour hors Europe, contactez-nous directement.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Puis-je commander une seule pièce ? <em class="faq-icon">+</em></div>
+            <div class="faq-a">Oui. <strong>À partir d'une seule pièce.</strong> Les grandes séries bénéficient de tarifs dégressifs, mais il n'y a aucun minimum imposé.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Quels formats de fichiers acceptez-vous ? <em class="faq-icon">+</em></div>
+            <div class="faq-a">Tous les formats : SVG, AI, PDF, PNG, JPG. <strong>Même un lien vers votre site suffit</strong> pour démarrer — on s'adapte à ce que vous avez.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev d1" id="fw">
+        <div id="fc" class="form-wrap">
+          <form id="contactForm" novalidate>
+          <div class="form-head">
+            <div class="form-head-title">VOTRE PROJET</div>
+            <div class="form-badge">Réponse sous 24h</div>
+          </div>
+          <div class="fg frow">
+            <div class="fg" id="g-fn">
+              <label class="flbl" for="fn">Prénom *</label>
+              <input class="fi" type="text" id="fn" name="prenom" placeholder="Votre prénom" required autocomplete="given-name"/>
+            </div>
+            <div class="fg" id="g-ln">
+              <label class="flbl" for="ln">Nom *</label>
+              <input class="fi" type="text" id="ln" name="nom" placeholder="Votre nom" required autocomplete="family-name"/>
+            </div>
+          </div>
+          <div class="fg frow">
+            <div class="fg" id="g-em">
+              <label class="flbl" for="em">E-mail * <span class="flbl-hint">Pour recevoir le devis</span></label>
+              <input class="fi" type="email" id="em" name="email" placeholder="vous@societe.fr" required autocomplete="email"/>
+            </div>
+            <div class="fg">
+              <label class="flbl" for="tel">Téléphone <span class="flbl-hint">Optionnel</span></label>
+              <input class="fi" type="tel" id="tel" name="telephone" placeholder="06 XX XX XX XX" autocomplete="tel"/>
+            </div>
+          </div>
+          <div class="fg">
+            <label class="flbl" for="co">Société / Organisation <span class="flbl-hint">Optionnel</span></label>
+            <input class="fi" type="text" id="co" name="societe" placeholder="Votre entreprise, hôtel, association…" autocomplete="organization"/>
+          </div>
+          <div class="fg" id="g-cat">
+            <label class="flbl" for="cat">Vous êtes * <span class="flbl-hint">Pour adapter le devis</span></label>
+            <select class="fs" id="cat" name="type_client" required>
+              <option value="" disabled selected>Sélectionner</option>
+              <option value="entreprise">Une entreprise</option>
+              <option value="restaurant">Un restaurant</option>
+              <option value="hotel">Un hôtel / établissement</option>
+              <option value="event">Un organisateur d'événements</option>
+              <option value="agence">Une agence</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="fg frow">
+            <div class="fg">
+              <label class="flbl" for="qty">Quantité <span class="flbl-hint">Même approximatif</span></label>
+              <select class="fs" id="qty" name="quantite">
+                <option value="" disabled selected>Combien de pièces ?</option>
+                <option>1 à 5 pièces</option>
+                <option>6 à 20 pièces</option>
+                <option>21 à 100 pièces</option>
+                <option>Plus de 100 pièces</option>
+                <option>Je ne sais pas encore</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="flbl" for="dl">Délai <span class="flbl-hint">Date impérative ?</span></label>
+              <select class="fs" id="dl" name="delai">
+                <option value="" disabled selected>Votre délai</option>
+                <option>Urgent — moins de 2 semaines</option>
+                <option>Standard — 2 à 4 semaines</option>
+                <option>Pas urgent — plus d'un mois</option>
+                <option>Pas encore défini</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg" id="g-msg">
+            <label class="flbl" for="msg">Votre projet * <span class="flbl-hint">Une direction suffit</span></label>
+            <textarea class="fta" id="msg" name="message" placeholder="Décrivez ce que vous voulez faire — le contexte, l'occasion, ce que vous voulez transmettre. Si vous avez un logo ou une charte à partager, mentionnez-le. Une idée vague est un point de départ parfait." required></textarea>
+          </div>
+          <div class="form-trust">
+            <span class="ft-item">Devis gratuit et sans engagement</span>
+            <span class="ft-item">Aperçu visuel inclus</span>
+            <span class="ft-item">Logo non obligatoire</span>
+            <span class="ft-item">Aucun démarchage</span>
+          </div>
+          <div class="fcheck">
+            <input type="checkbox" id="rgpd" required/>
+            <label for="rgpd">J'accepte que mes informations soient utilisées pour traiter ma demande. Aucun démarchage, aucune revente. <a href="#">Politique de confidentialité</a>.</label>
+          </div>
+          <button class="fsub" id="sbtn" type="button">
+            <div>
+              <div>ENVOYER MON PROJET</div>
+              <div class="fsub-sub">Aperçu visuel + devis chiffré sous 24h</div>
+            </div>
+            <span class="fsub-arr">→</span>
+          </button>
+          </form>
+        </div>
+
+        <div class="succ" id="fsucc">
+          <span class="succ-icon">✓ REÇU</span>
+          <div class="succ-title">ON REVIENT<br>VERS VOUS<br>SOUS 24H.</div>
+          <p class="succ-p">Vous recevrez un devis chiffré et <strong>un aperçu visuel de votre projet gravé</strong>. Une question urgente ? Appelez directement.</p>
+          <div class="succ-links">
+            <a href="mailto:nathgravures@gmail.com" class="succ-link">nathgravures@gmail.com</a>
+            <a href="tel:+33783990180" class="succ-link">07 83 99 01 80</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <a href="#" class="f-logo">Nath<b>.</b>Gravure</a>
+  <p class="f-copy">© 2025 Nath.Gravure — Gravure laser sur bois sur-mesure · Livraison Europe</p>
+  <div class="f-links">
+    <a href="#manifeste">Approche</a>
+    <a href="#produits">Productions</a>
+    <a href="#pourqui">Pour qui</a>
+    <a href="#contact">Démarrer un projet</a>
+    <a href="#">Mentions légales</a>
+  </div>
+  <div class="f-socs">
+    <a href="https://www.instagram.com/nathgravure" class="fsoc" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/nathgravure" class="fsoc" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@nathgravure" class="fsoc" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.52V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- SBAR -->
+<div class="sbar" id="sbar">
+  <p><strong>Nath.Gravure</strong> — Gravure laser sur bois · Devis gratuit sous 24h</p>
+  <a href="#contact" class="sbar-cta">DÉMARRER UN PROJET →</a>
+</div>
+
+<script>
+// Tiroir liste possibilités
+const plistBtn=document.getElementById('plistBtn');
+const plistDrawer=document.getElementById('plistDrawer');
+const plistIcon=document.getElementById('plistIcon');
+if(plistBtn){
+  plistBtn.addEventListener('click',function(){
+    const isOpen=plistDrawer.classList.contains('open');
+    plistDrawer.classList.toggle('open',!isOpen);
+    plistBtn.setAttribute('aria-expanded',String(!isOpen));
+    plistIcon.textContent=isOpen?'+':'×';
+  });
+}
+
+const nav=document.getElementById('nav'),sbar=document.getElementById('sbar');
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  nav.classList.toggle('s',y>60);
+  sbar.classList.toggle('on',y>window.innerHeight*.65);
+},{passive:true});
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.08});
+document.querySelectorAll('.rev').forEach(el=>obs.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.addEventListener('click',function(){
+    const isOpen=this.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-icon').textContent='+'});
+    if(!isOpen){this.classList.add('open');this.querySelector('.faq-icon').textContent='−'}
+  });
+});
+document.getElementById('sbtn').onclick=function(){
+  const fields=[{id:'fn',gid:'g-fn'},{id:'ln',gid:'g-ln'},{id:'em',gid:'g-em'},{id:'cat',gid:'g-cat'},{id:'msg',gid:'g-msg'}];
+  let ok=true;
+  fields.forEach(({id,gid})=>{
+    const el=document.getElementById(id),g=document.getElementById(gid);
+    if(!el.value.trim()){g.classList.add('err');setTimeout(()=>g.classList.remove('err'),2500);ok=false;}
+  });
+  const em=document.getElementById('em');
+  if(em.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){
+    document.getElementById('g-em').classList.add('err');
+    setTimeout(()=>document.getElementById('g-em').classList.remove('err'),2500);
+    ok=false;
+  }
+  if(!document.getElementById('rgpd').checked){
+    document.getElementById('rgpd').style.outline='2px solid var(--r)';
+    setTimeout(()=>document.getElementById('rgpd').style.outline='',2500);
+    ok=false;
+  }
+  if(!ok)return;
+
+  // Disable button during send
+  const btn=document.getElementById('sbtn');
+  btn.style.opacity='.5';
+  btn.style.pointerEvents='none';
+
+  const form=document.getElementById('contactForm');
+  const data=new FormData(form);
+
+  fetch('https://formsubmit.co/ajax/nathgravures@gmail.com',{
+    method:'POST',
+    headers:{'Accept':'application/json'},
+    body:data
+  })
+  .then(r=>r.json())
+  .then(res=>{
+    if(res.success==='true'||res.success===true){
+      document.getElementById('fc').style.display='none';
+      document.getElementById('fsucc').style.display='block';
+      document.getElementById('fsucc').scrollIntoView({behavior:'smooth',block:'center'});
+    } else {
+      btn.style.opacity='';btn.style.pointerEvents='';
+      alert('Une erreur est survenue. Merci de réessayer ou d\'écrire directement à nathgravures@gmail.com');
+    }
+  })
+  .catch(()=>{
+    btn.style.opacity='';btn.style.pointerEvents='';
+    alert('Une erreur est survenue. Merci de réessayer ou d\'écrire directement à nathgravures@gmail.com');
+  });
+};
+</script>
+</body>
+</html>
